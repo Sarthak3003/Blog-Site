@@ -21,6 +21,10 @@ app.get("/", function(req, res) {
   res.render("home", {homeContent: homeStartingContent, posts: posts});
 });
 
+app.get("/", function(req, res) {
+  res.render("index", {homeContent: homeStartingContent, posts: posts});
+});
+
 app.get("/about", function(req, res) {
   res.render("about", {aboutContent: aboutContent});
 });
